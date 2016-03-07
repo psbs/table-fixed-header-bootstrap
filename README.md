@@ -1,26 +1,21 @@
 # table-fixed-header-bootstrap
-Shows BootstrapTable Header on pagetop when scroll happens. Text-wrap and same width of table header as original Table
+Shows HTML Table Header on top on page scroll
 
-Include the 
-```html 
-table-fixed-header.js and table-fixed-header.css
-```
-And add
-```html
-class='psb-fixed-table'  to <table>
-```
+Include the **table-fixed-header.js** and **table-fixed-header.css**
+And add **class='psb-fixed-table'**  to *table tag* as shown below:
 
-SAMPLE HTML:
+
+SAMPLE PAGE HTML:
 ```html
 <html>
 <head>
-  <link rel="stylesheet" href="bootstrap.min.css">
-  <link rel="stylesheet" href="table-fixed-header.css">
+  <link rel="stylesheet" href="bootstrap.min.css"> <!-- works only with bootstrap -->
+  <link rel="stylesheet" href="table-fixed-header.css"> <!-- must include -->
 </head>
 <body>
   <div class='container'>
     <div class='row'>
-      <table class='table table-bordered psb-fixed-table'>
+      <table class='table table-bordered psb-fixed-table'><!-- must include psb-fixed-table class -->
         <thead>
           <th></th>
         </thead>
@@ -29,8 +24,14 @@ SAMPLE HTML:
       </table>  
     </div>
   </div>
-  <script src="jquery.min.js"></script>
-  <script src="table-fixed-header.js"></script>
+  <script src="jquery.min.js"></script> <!-- must include jquery -->
+  <script src="table-fixed-header.js"></script><!-- must include -->
 </body>  
 </html>  
 ```
+
+###Limitations in current Version
+- works with single table on page
+- works with single bootstrap container/container-fluid tag in page
+- fixed header tag appears at 300px scroll and need to be changed manually
+- doesnot not include support for all bootstap table classes features e.g. table-condensed
