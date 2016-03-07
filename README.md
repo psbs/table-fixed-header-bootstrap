@@ -1,5 +1,6 @@
 # table-fixed-header-bootstrap
 Shows HTML Table Header **fixed** on top on page scroll and works perfectly with **html tables containing large data**. 
+[VIEW DEMO](http://psbs.github.io/table-fixed-header-bootstrap/)
 
 Include the **table-fixed-header.js** and **table-fixed-header.css**.
 
@@ -18,9 +19,14 @@ SAMPLE PAGE HTML:
     <div class='row'>
       <table class='table table-bordered psb-fixed-table'><!-- must include psb-fixed-table class -->
         <thead><!-- element must be available -->
-          <th></th> <!-- element must be available -->
+          <tr>
+            <th></th> <!-- element must be available -->
+          </tr>  
         </thead>
         <tbody>
+          <tr>
+            <td></td>
+          </tr>
         </tbody>
       </table>  
     </div>
