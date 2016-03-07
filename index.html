@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Table-fixed-header-bootstrap by psbs</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1 class="header">Table-fixed-header-bootstrap</h1>
+        <p class="header">FIxed Table Header for Bootstrap based HTML Tables with Large Data on Page scroll</p>
+
+        <ul>
+          <li class="download"><a class="buttons" href="https://github.com/psbs/table-fixed-header-bootstrap/zipball/master">Download ZIP</a></li>
+          <li class="download"><a class="buttons" href="https://github.com/psbs/table-fixed-header-bootstrap/tarball/master">Download TAR</a></li>
+          <li><a class="buttons github" href="https://github.com/psbs/table-fixed-header-bootstrap">View On GitHub</a></li>
+        </ul>
+
+        <p class="header">This project is maintained by <a class="header name" href="https://github.com/psbs">psbs</a></p>
+
+
+      </header>
+      <section>
+        <h1>
+<a id="table-fixed-header-bootstrap" class="anchor" href="#table-fixed-header-bootstrap" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>table-fixed-header-bootstrap</h1>
+
+<p>Shows HTML Table Header <strong>fixed</strong> on top on page scroll and works perfectly with <strong>html tables containing large data</strong>. </p>
+
+<p>Include the <strong>table-fixed-header.js</strong> and <strong>table-fixed-header.css</strong>.</p>
+
+<p>And add <strong>class='psb-fixed-table'</strong>  to <em>table tag</em> as shown below:</p>
+
+<p>SAMPLE PAGE HTML:</p>
+
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">html</span>&gt;
+&lt;<span class="pl-ent">head</span>&gt;
+  &lt;<span class="pl-ent">link</span> <span class="pl-e">rel</span>=<span class="pl-s"><span class="pl-pds">"</span>stylesheet<span class="pl-pds">"</span></span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>bootstrap.min.css<span class="pl-pds">"</span></span>&gt; <span class="pl-c">&lt;!-- works only with bootstrap --&gt;</span>
+  &lt;<span class="pl-ent">link</span> <span class="pl-e">rel</span>=<span class="pl-s"><span class="pl-pds">"</span>stylesheet<span class="pl-pds">"</span></span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>table-fixed-header.css<span class="pl-pds">"</span></span>&gt; <span class="pl-c">&lt;!-- must include --&gt;</span>
+&lt;/<span class="pl-ent">head</span>&gt;
+&lt;<span class="pl-ent">body</span>&gt;
+  &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">'</span>container<span class="pl-pds">'</span></span>&gt;
+    &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">'</span>row<span class="pl-pds">'</span></span>&gt;
+      &lt;<span class="pl-ent">table</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">'</span>table table-bordered psb-fixed-table<span class="pl-pds">'</span></span>&gt;<span class="pl-c">&lt;!-- must include psb-fixed-table class --&gt;</span>
+        &lt;<span class="pl-ent">thead</span>&gt;<span class="pl-c">&lt;!-- element must be available --&gt;</span>
+          &lt;<span class="pl-ent">th</span>&gt;&lt;/<span class="pl-ent">th</span>&gt; <span class="pl-c">&lt;!-- element must be available --&gt;</span>
+        &lt;/<span class="pl-ent">thead</span>&gt;
+        &lt;<span class="pl-ent">tbody</span>&gt;
+        &lt;/<span class="pl-ent">tbody</span>&gt;
+      &lt;/<span class="pl-ent">table</span>&gt;  
+    &lt;/<span class="pl-ent">div</span>&gt;
+  &lt;/<span class="pl-ent">div</span>&gt;
+<span class="pl-s1">  &lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>jquery.min.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;</span> <span class="pl-c">&lt;!-- must include jquery --&gt;</span>
+<span class="pl-s1">  &lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>table-fixed-header.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;</span><span class="pl-c">&lt;!-- must include --&gt;</span>
+&lt;/<span class="pl-ent">body</span>&gt;  
+&lt;/<span class="pl-ent">html</span>&gt;  </pre></div>
+
+<h3>
+<a id="limitations-in-current-version" class="anchor" href="#limitations-in-current-version" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Limitations in current Version</h3>
+
+<ul>
+<li>works with single table on page</li>
+<li>works with single bootstrap <em>container</em>/<em>container-fluid</em> tag in page</li>
+<li>fixed header tag appears at <em>300px</em> scroll and need to be changed manually</li>
+<li>does not include support for all bootstap table classes e.g. <em>table-condensed</em>
+</li>
+<li>does not support small screen size</li>
+</ul>
+      </section>
+      <footer>
+        <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+		
+  </body>
+</html>
