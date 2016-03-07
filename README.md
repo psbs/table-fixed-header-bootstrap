@@ -2,6 +2,7 @@
 Shows HTML Table Header **fixed** on top on page scroll
 
 Include the **table-fixed-header.js** and **table-fixed-header.css**
+
 And add **class='psb-fixed-table'**  to *table tag* as shown below:
 
 
