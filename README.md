@@ -13,6 +13,7 @@ HTML should be in the given format:
         </thead>
         <tbody>
         </tbody>
+      </table>  
     </div>
   </div>
 </body>
