@@ -3,23 +3,12 @@ Shows BootstrapTable Header on pagetop when scroll happens. Text-wrap and same w
 
 Include the 
 ```html 
-table-fixed-header.js
+table-fixed-header.js and table-fixed-header.css
 ```
-and 
-```html 
-table-fixed-header.css
-```
-in page
-
-Just add
+And add
 ```html
-psb-fixed-table
+class='psb-fixed-table'  to <table>
 ```
-class to 
-```html
-<table>
-```
-
 
 SAMPLE HTML:
 ```html
