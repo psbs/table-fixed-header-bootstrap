@@ -3,9 +3,6 @@ Shows BootstrapTable Header on pagetop when scroll happens. Text-wrap and same w
 
 HTML should be in the given format:
 ```html
-<code>
-<html>
-<body>
   <div class='container'>
     <div class='row'>
       <table class='table table-bordered psb-fixed-table'>
@@ -17,7 +14,4 @@ HTML should be in the given format:
       </table>  
     </div>
   </div>
-</body>
-</html>
-</code>
 ```
