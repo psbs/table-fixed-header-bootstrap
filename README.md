@@ -34,4 +34,4 @@ SAMPLE PAGE HTML:
 - works with single table on page
 - works with single bootstrap container/container-fluid tag in page
 - fixed header tag appears at 300px scroll and need to be changed manually
-- doesnot not include support for all bootstap table classes features e.g. table-condensed
+- does not include support for all bootstap table classes e.g. table-condensed
