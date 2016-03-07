@@ -16,8 +16,8 @@ SAMPLE PAGE HTML:
   <div class='container'>
     <div class='row'>
       <table class='table table-bordered psb-fixed-table'><!-- must include psb-fixed-table class -->
-        <thead>
-          <th></th>
+        <thead><!-- element must be available -->
+          <th></th> <!-- element must be available -->
         </thead>
         <tbody>
         </tbody>
