@@ -2,7 +2,8 @@
 Shows BootstrapTable Header on pagetop when scroll happens. Text-wrap and same width of table header as original Table
 
 HTML should be in the given format:
-
+```html
+<code>
 <html>
 <body>
   <div class='container'>
@@ -18,3 +19,5 @@ HTML should be in the given format:
   </div>
 </body>
 </html>
+</code>
+```
