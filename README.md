@@ -1,7 +1,27 @@
 # table-fixed-header-bootstrap
 Shows BootstrapTable Header on pagetop when scroll happens. Text-wrap and same width of table header as original Table
 
-HTML should be in the given format:
+Include the 
+```html 
+table-fixed-header.js
+```
+and 
+```html 
+table-fixed-header.css
+```
+in page
+
+Just add
+```html
+psb-fixed-table
+```
+class to 
+```html
+<table>
+```
+
+
+SAMPLE HTML:
 ```html
 <html>
 <head>
