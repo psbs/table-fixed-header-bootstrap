@@ -14,7 +14,11 @@ psb_fixed_tbl.table += "<table id='temp_table_header' class='table table-bordere
 psb_fixed_tbl.table += "<thead>"+$(".psb-fixed-table thead").clone().html()+"</thead>";
 psb_fixed_tbl.table += "</table>";
 
-$(".container").append("<div id='fixed_header_tbl_div' class='row'></div>");
+if($(".container").length){
+  $(".container").append("<div id='fixed_header_tbl_div' class='row'></div>");
+}else if($(".container-fluid").length){
+  $(".container-fluid").append("<div id='fixed_header_tbl_div' class='row'></div>");
+}
 
 psb_fixed_tbl.fixed_table_header= function(){
   if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300){
