@@ -1,5 +1,5 @@
 # table-fixed-header-bootstrap
-Shows HTML Table Header on top on page scroll
+Shows HTML Table Header **fixed** on top on page scroll
 
 Include the **table-fixed-header.js** and **table-fixed-header.css**
 And add **class='psb-fixed-table'**  to *table tag* as shown below:
@@ -32,6 +32,6 @@ SAMPLE PAGE HTML:
 
 ###Limitations in current Version
 - works with single table on page
-- works with single bootstrap container/container-fluid tag in page
-- fixed header tag appears at 300px scroll and need to be changed manually
-- does not include support for all bootstap table classes e.g. table-condensed
+- works with single bootstrap *container*/*container-fluid* tag in page
+- fixed header tag appears at *300px* scroll and need to be changed manually
+- does not include support for all bootstap table classes e.g. *table-condensed*
